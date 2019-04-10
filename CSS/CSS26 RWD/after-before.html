@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css"/>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            overflow: auto;
+        }
+        .row{
+            overflow: auto;
+            background: #CCCCCC;
+        }
+        .row::before{
+            content: "Before";
+            clear: both;
+            display: block;
+            background: violet;
+        }
+        .row::after{
+            content: "After";
+            clear: both;
+            display: block;
+            background: pink;
+        }
+        .col {
+            min-height: 300px;
+            padding: 30px;
+        }
+        .col-1{
+            width: 33%;
+            background: green;
+            float: left;
+            color: white;
+        }
+        .col-2{
+            width:67%;
+            background: red;
+            float: right;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-1">Column 1</div>
+            <div class="col col-2">Column 2</div>
+        </div>
+    </div>
+</body>
+</html>
