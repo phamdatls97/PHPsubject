@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Hàm trong js là 1 tập hợp gồn nhiều câu lệnh được gom nhóm lại thành 1 module để thực hiện những tính năng cụ thể</p>
+<p>Hàm tính chu vi hình tròn</p>
+<p>Hàm dùng tính chu vi hay diện tích hình chữ nhật</p>
+<p>Hàm chuyển độ C sang độ F</p>
+
+<pre>
+    cú pháp:
+    function tên_hàm (tham_số_1,ts2,ts3,...){
+        //code thực thi của hàm
+    }
+    Gọi hàm:
+    tên_hàm(giá_trị_1,gtr2,gtr3);
+    //có thể thay giá trị = biến;
+</pre>
+
+<script type="text/javascript">
+    function cvhinhtron(pi,r) {
+        var chuvi = 2*pi*r;
+        return chuvi;
+    }
+    function dthinhtron(pi,r) {
+        var dientich = pi*r*r;
+        return dientich;
+    }
+    var P = cvhinhtron(3.14,3);
+    var S = dthinhtron(3.14,3);
+    console.log("Chu vi:" + P);
+    console.log("Diện tích:" + S);
+</script>
+</body>
+</html>
