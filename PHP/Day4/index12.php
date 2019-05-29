@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>$_GET trong PHP sẽ lấy gía trị post đi từ form có method="get"</h1>
-    <h1>Khi post data từ form có method="get" thì data sẽ xuất hiện trên URL</h1>
+    <h1>Khi post data từ form có method="get" thì data sẽ xuất hiện trên URL.</h1>
     <?php
         //hàm isset() check xem giá trị của biến có tồn tại hay k
     if(isset($_GET) && isset($_GET['email']) && isset($_GET['password'])){
