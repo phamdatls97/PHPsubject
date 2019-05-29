@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <h1>$_POST trong PHP sẽ lấy gía trị post đi từ form có method="post"</h1>
+    <h1>$_GET trong PHP sẽ lấy gía trị post đi từ form có method="get"</h1>
+    <h1>Khi post data từ form có method="get" thì data sẽ xuất hiện trên URL</h1>
     <?php
         //hàm isset() check xem giá trị của biến có tồn tại hay k
-    if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
+    if(isset($_GET) && isset($_GET['email']) && isset($_GET['password'])){
         echo "<pre>";
-        print_r($_POST);
+        print_r($_GET);
         echo "</pre>";
     }
     ?>
@@ -19,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form name="login" action="" method="post">
+                <form name="login" action="" method="get">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
