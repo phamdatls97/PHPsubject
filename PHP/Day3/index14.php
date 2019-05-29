@@ -48,21 +48,18 @@
         echo '<pre>';
         print_r($cities);
         echo '</pre>';
-        foreach ($cities as $key_city => $city){
-            echo "<ul>";
-            echo $city['name'];
-            foreach ($city['district'] as $key_district => $district){
-                echo "<li>";
-                echo $district["name"];
-                foreach ($district['unit'] as $key_unit => $unit){
-                    echo "<p style='padding-left:30px'>";
-                    echo $unit;
-                    echo "</p>";
-                }
-                echo "</li>";
-            }
-            echo "</ul>";
-    }
+
+
+        echo "truy cập phần tử của mảng đa chiều";
+        echo "<br>".$cities['hn']['district']['hbt']['name'];
+        echo "<br>".$cities['hn']['district']['hbt']['unit'][0];
+        echo "<br>".$cities['hn']['district']['hbt']['unit'][1];
+        echo "<br>".$cities['hn']['district']['hbt']['unit'][2];
+        //----------------HCM------------------
+        echo "<br>".$cities['hcm']['district']['hbt']['name'];
+        echo "<br>".$cities['hcm']['district']['hbt']['unit'][0];
+        echo "<br>".$cities['hcm']['district']['hbt']['unit'][1];
+        echo "<br>".$cities['hcm']['district']['hbt']['unit'][2];
     ?>
 </body>
 </html>
