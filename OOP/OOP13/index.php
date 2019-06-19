@@ -41,7 +41,7 @@ class ClassicPhone{
 }
 
 class Smartphone extends ClassicPhone{
-    // Khai báo các trait mà class này sẽ sử dụng
+    // Khai báo các trait mà class này sẽ sử dụng!
     /**
      * Từ khóa use nằm trong class là khai báo các trait mà class này sẽ kế thừa
      * trait hỗ trợ đa kế thừa
