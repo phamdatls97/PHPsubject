@@ -12,7 +12,35 @@
 */
 
 Route::get('/', function () {
-    return view('simpleadmin');
+    return view('simpleadmin.homepage.homepage1');
+});
+
+Route::get('/category', function () {
+    return view('simpleadmin.category.category');
+});
+
+Route::get('/article', function () {
+    return view('simpleadmin.article.article');
+});
+
+Route::get('/banner', function () {
+    return view('simpleadmin.banner.banner');
+});
+
+Route::get('/email', function () {
+    return view('simpleadmin.email.email');
+});
+
+Route::get('/permission', function () {
+    return view('simpleadmin.permission.permission');
+});
+
+Route::get('/product', function () {
+    return view('simpleadmin.product.product');
+});
+
+Route::get('/user', function () {
+    return view('simpleadmin.user.user');
 });
 
 Auth::routes();
